@@ -1,13 +1,19 @@
+@font-face {
+    font-family: 'roboto';
+    src: url(./Roboto-Regular.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     box-sizing: border-box;
+    font-family: 'roboto';
 }
 
 body {
     display: grid;
-    grid-template: 1fr 3fr/ 1fr 4fr;
+    grid-template: 1fr 5fr/ 1fr 4fr;
     height: 100vh;
     width: 100vw;
 }
@@ -18,14 +24,17 @@ body {
     gap: 3rem;
     align-items: start;
     align-content: start;
+    background-color: blue;
+    color: white;
 }
 
 .sidebar .wrapper{
     display: flex;
     align-items: center;
     gap: 1rem;
-    padding: 1rem;
+    padding: 1.5rem;
     font-size: 2rem;
+    font-weight: 600;
 }
 
 .sidebar ul {
@@ -33,8 +42,9 @@ body {
     display: grid;
     align-items: center;
     gap: 1rem;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     padding: 1rem;
+    font-weight: 600;
 }
 
 .sidebar li {
@@ -48,7 +58,72 @@ img {
 }
 
 header {
+    display: grid;
+    grid-template: 2fr 3fr/ 3fr 2fr;
+}
 
+header .search-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    padding-left: 5rem;
+}
+
+header input {
+    flex: 1;
+    font-size: 1rem;
+    padding: .5rem;
+    background-color: lightgrey;
+    border-radius: 1.5rem;
+}
+
+header .profile-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    gap: 2rem;
+    padding: 1.5rem;
+    padding-right: 5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+header .greeting-wrapper {
+    display: flex;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    align-items: center;
+    padding-left: 5rem;
+    font-weight: 600;
+}
+
+header .greeting-text {
+    display: grid;
+    gap: .5rem;
+}
+
+header .greeting-text > :last-child {
+    font-size: 1.75rem;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: right;
+    gap: 2rem;
+    padding-right: 4rem;
+}
+
+header ul li {
+    border: 1px solid blue;
+    background-color: blue;
+    color: white;
+    padding: .75rem 2rem;
+    border-radius: 1.5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
 }
 
 main {
