@@ -199,6 +199,11 @@ main .card img {
     opacity: .8;
 }
 
+main .announcements-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
 main .announcements-wrapper ul {
     background-color: white;
     margin-top: 1rem;
@@ -208,6 +213,7 @@ main .announcements-wrapper ul {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    flex: 1;
 }
 
 main .announcements-wrapper p {
@@ -249,6 +255,6 @@ main .trending-wrapper img {
 
 a {
     text-decoration: none;
-    font-size: .8rem;
+    font-size: .7rem;
     color: black;
 }
