@@ -6,7 +6,6 @@
 * {
     margin: 0;
     padding: 0;
-    /* border: 1px solid red; */
     box-sizing: border-box;
     font-family: 'roboto';
 }
@@ -32,7 +31,7 @@ body {
     display: flex;
     align-items: center;
     gap: 1rem;
-    padding: 1.5rem;
+    padding: 1rem;
     font-size: 2rem;
     font-weight: 600;
 }
@@ -71,7 +70,7 @@ header .search-wrapper {
     display: flex;
     align-items: center;
     gap: 1.5rem;
-    padding: 1.5rem;
+    padding: 1rem;
     padding-left: 5rem;
 }
 
@@ -79,8 +78,20 @@ header input {
     flex: 1;
     font-size: 1rem;
     padding: .5rem;
-    background-color: lightgrey;
+    border: 1px solid #dde4ec;
+    background-color: #dde4ec;
     border-radius: 1.5rem;
+    max-width: 1000px;
+}
+
+header img:first-child {
+    font-size: 0rem;
+    height: 2rem;
+}
+
+header img:nth-child(2) {
+    height: 3.5rem;
+    border-radius: 50%;
 }
 
 header .profile-wrapper {
@@ -88,7 +99,7 @@ header .profile-wrapper {
     align-items: center;
     justify-content: right;
     gap: 2rem;
-    padding: 1.5rem;
+    padding: 1rem;
     padding-right: 5rem;
     font-size: 1.5rem;
     font-weight: 600;
@@ -103,6 +114,11 @@ header .greeting-wrapper {
     font-weight: 600;
 }
 
+header .greeting-wrapper img {
+    height: 5.5rem;
+    border-radius: 50%;
+}
+
 header .greeting-text {
     display: grid;
     gap: .5rem;
@@ -110,6 +126,7 @@ header .greeting-text {
 
 header .greeting-text > :last-child {
     font-size: 1.75rem;
+    text-wrap: nowrap;
 }
 
 header ul {
@@ -131,5 +148,6 @@ header ul li {
 }
 
 main {
-
+    padding: 2rem;
+    background-color: #dde4ec;
 }
