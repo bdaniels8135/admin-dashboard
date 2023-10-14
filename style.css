@@ -181,7 +181,7 @@ main .card {
 
 main .card p {
     flex: 3;
-    padding-top: 1rem;
+    padding-top: .5rem;
     font-size: 1.25rem;
     color: grey;
 }
@@ -197,4 +197,24 @@ main .card img {
     font-size: 0rem;
     height: 2rem;
     opacity: .8;
+}
+
+main .list-wrapper {
+    background-color: white;
+    margin-top: 1rem;
+    padding: 2.5rem;
+    border-radius: 1rem;
+}
+
+main .list-wrapper ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+main .list-wrapper p {
+    color: grey;
+    margin-top: .25rem;
+    font-size: .9rem;
 }
