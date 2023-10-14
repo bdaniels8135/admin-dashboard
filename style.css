@@ -199,22 +199,56 @@ main .card img {
     opacity: .8;
 }
 
-main .list-wrapper {
+main .announcements-wrapper ul {
     background-color: white;
     margin-top: 1rem;
     padding: 2.5rem;
     border-radius: 1rem;
-}
-
-main .list-wrapper ul {
     list-style: none;
     display: flex;
     flex-direction: column;
     gap: 2rem;
 }
 
-main .list-wrapper p {
+main .announcements-wrapper p {
     color: grey;
     margin-top: .25rem;
     font-size: .9rem;
+}
+
+main .trending-wrapper ul {
+    background-color: white;
+    margin-top: 1rem;
+    padding: 2.5rem;
+    border-radius: 1rem;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+main .trending-wrapper li {
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 3fr;
+}
+
+main .trending-wrapper p:nth-child(2) {
+    font-size: 1.1rem;
+}
+
+main .trending-wrapper p:last-child {
+    color: grey;
+}
+
+main .trending-wrapper img {
+    height: 3.5rem;
+    border-radius: 50%;
+    grid-row: span 2;
+    margin-right: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+    font-size: .8rem;
+    color: black;
 }
