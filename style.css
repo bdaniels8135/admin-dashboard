@@ -8,6 +8,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'roboto';
+    letter-spacing: .05em;
 }
 
 body {
@@ -150,4 +151,50 @@ header ul li {
 main {
     padding: 2rem;
     background-color: #dde4ec;
+    display: grid;
+    grid-template: 1fr 1fr / 3fr 1fr;
+    gap: 1.5rem;
+}
+
+main .projects-wrapper {
+    grid-row: span 2;
+    display: flex;
+    flex-direction: column;
+}
+
+main .project-cards-wrapper {
+    display: grid;
+    grid-template: 1fr 1fr 1fr / 1fr 1fr;
+    gap: 2rem;
+    margin-top: 1rem;
+    flex: 1;
+}
+
+main .card {
+    display: flex;
+    flex-direction: column;
+    border-left: .75rem solid #ffae00;
+    border-radius: .75rem;
+    background-color: white;
+    padding: 3rem 3rem 2rem 1.5rem;
+}
+
+main .card p {
+    flex: 3;
+    padding-top: 1rem;
+    font-size: 1.25rem;
+    color: grey;
+}
+
+main .card .icons-wrapper {
+    flex: 1;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: right;
+}
+
+main .card img {
+    font-size: 0rem;
+    height: 2rem;
+    opacity: .8;
 }
